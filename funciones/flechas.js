@@ -13,7 +13,7 @@ var cuadrado=function(num){
     return num*num;
 }
 
-var cuadradito=num=>num*num;
+var cuadradito=(num)=>num*num;
 console.log(cuadradito(10));
 
 //MAS DE UN PARAMETRO

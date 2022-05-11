@@ -2,9 +2,6 @@
 const [a,b,c]=[100,200,300];
 console.log(a);
 
-
-
-
 function variosReturn(){
     const a =()=>"letra a";
     const b =()=>"letra b";
