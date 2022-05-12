@@ -10,7 +10,20 @@ for (let i = 0; i < 10; i++) {
 console.log(i);
 
 //scopes->bloque y closures->funciones
-function intro(){
+//ámbito léxico
+const externa1=()=>{
+    let msj= "mensaje de la función intro";
+    return ()=>`función interna + ${msj}`;
+    //return interna1;
+}
+//hoisting
+const z=externa1();
+console.log(typeof(z));
+console.log(z());
+
+
+function externa(){
+    //let y;
     let msj= "mensaje de la función intro";
     function interna(){
         console.log(`función interna + ${msj}`);
@@ -18,7 +31,13 @@ function intro(){
     return interna;
 }
 //intro()();
- const x=intro();
+ const x=externa();
+ x();
+ console.log(typeof(x));
+ 
+
+
+ const y=externa();
  x();
  
  //ALCANCIA
