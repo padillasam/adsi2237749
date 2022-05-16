@@ -20,4 +20,7 @@ function principal(vec1, callback1,callback2) {
   }
   
   vector = [];
-  principal(vector, imprimeVec, sumaVector);
+  principal(vector,()=>{imprimeVec(vector,()=>{
+      console.log(sumaVector(vector));
+    })
+});
