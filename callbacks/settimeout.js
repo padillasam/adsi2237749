@@ -1,8 +1,13 @@
 //setTimeout(función,tiempo en milisegundos)
+setTimeout(() => {
+    console.log(`con flecha`);  
+}, 1000);
 
 setTimeout(function(){
     console.log(`asincronismo`);
 },3000)
+
+setTimeout(proceso1, 3000);
 
 setTimeout(()=>console.log("amo programar"),5000);
 //******************************************** */
