@@ -11,9 +11,10 @@ let obj={
 function prueba(objeto) {
     return new Promise(
         function (resolve, reject) {
-        //     if (obj.length==0) {
-        //         reject(new Error(`No existen datos`));
-        //    }
+            if (obj.length==0) {
+            //if (true) { //probar reject
+                reject(new Error(`No existen datos`));
+           }
         //resolve(objeto);
         setTimeout(() => {
                 resolve(objeto);
