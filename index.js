@@ -1,1 +1,2 @@
-console.log('Usando ramas GIT');
+let x=100;
+console.log(`Valor de x ${x}`);
